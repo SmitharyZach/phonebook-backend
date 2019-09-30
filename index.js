@@ -6,10 +6,11 @@ const cors = require('cors')
 
 app.use(cors())
 
-
 app.use(bodyParser.json())
 
 app.use(morgan('common'))
+
+app.use(express.static('build'))
 
 
 let persons = [
